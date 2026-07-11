@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sonakshi Sanyal - Illustrator &amp; Writer</title>
+<meta name="description" content="The portfolio of Sonakshi Sanyal - illustrator and writer. Hand-painted fae women, mythic creatures and invented worlds, across alcohol marker, watercolour, acrylic and ink.">
+<meta name="theme-color" content="#f6f1e7">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sonakshi Sanyal - Illustrator &amp; Writer">
+<meta property="og:description" content="Hand-painted worlds, fae women who make their own rules, and creatures drawn somewhere between dreaming and waking.">
+
+
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400,0,0;0,9..144,400,60,1;0,9..144,560,0,0;1,9..144,400,60,1;1,9..144,500,0,0&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<noscript><link rel="stylesheet" href="css/style.css"></noscript>
+</head>
+
+<body>
+
+<!-- ===== Preloader ===== -->
+<div id="loader">
+  <div style="text-align:center">
+    <div class="loader-name" aria-hidden="true">
+      <span style="animation-delay:.00s">S</span><span style="animation-delay:.05s">o</span><span style="animation-delay:.10s">n</span><span style="animation-delay:.15s">a</span><span style="animation-delay:.20s">k</span><span style="animation-delay:.25s">s</span><span style="animation-delay:.30s">h</span><span style="animation-delay:.35s">i</span>
+    </div>
+    <div class="loader-bar"></div>
+  </div>
+</div>
+
+<!-- ===== Ambient background layers ===== -->
+<canvas id="field" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div id="progress" aria-hidden="true"></div>
+
+<!-- ===== Nav ===== -->
+<header class="nav">
+  <a class="nav-mark" href="#top">Sonakshi <b>Sanyal</b></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#writing">Writing</a>
+    <a href="#recognition">Recognition</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Toggle menu">Menu</button>
+</header>
+
+<main class="page" id="top">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero wrap">
+    <img class="hero-motif" src="images/sketch-motif.png" alt="" aria-hidden="true">
+    <p class="hero-kicker eyebrow">Illustrator &amp; Writer</p>
+    <h1 class="hero-title">
+      <span class="line"><span class="word">Sonakshi</span></span>
+      <span class="line"><span class="word accent">Sanyal</span></span>
+    </h1>
+    <div class="hero-sub">
+      <p class="hero-roles">Painter<span class="dot">/</span>Storyteller<span class="dot">/</span>Record&nbsp;Holder</p>
+    </div>
+    <div class="hero-cue" aria-hidden="true"><span class="rule"></span> Scroll to explore</div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section wrap" id="about">
+    <div class="about-grid">
+      <blockquote class="about-quote reveal">
+        Art is just a way to find another <em>escape from reality</em> - somewhere to keep <em>dreaming with my eyes open.</em>
+      </blockquote>
+      <div class="about-side reveal d1">
+        <p>I'm a young illustrator and writer. I work by hand across alcohol marker, watercolour, acrylic, oil pastel, coloured pencil, charcoal and ink, and I keep coming back to the same handful of subjects: women who don't fit the usual mould, fae and mythic figures, animals, and whole worlds invented out of my own head.</p>
+        <p>Alongside the art I write. My poetry and stories have been published with Scholastic and in my own collection, and my work has run on a magazine cover and across student journals.</p>
+        <div class="about-meta">
+          <div class="stat"><b>40+</b><span>Artworks</span></div>
+          <div class="stat"><b>9</b><span>Media</span></div>
+          <div class="stat"><b>6</b><span>Publications</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section class="section wrap" id="gallery">
+    <div class="gallery-head">
+      <div>
+        <p class="eyebrow reveal">The Sketchbook</p>
+        <h2 class="section-title reveal" style="margin-bottom:0">Everything, on the wall.</h2>
+      </div>
+      <div class="filters reveal d1" role="group" aria-label="Filter by medium">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="marker">Alcohol Marker</button>
+        <button class="filter" data-filter="acrylic">Acrylic</button>
+        <button class="filter" data-filter="watercolour">Watercolour</button>
+        <button class="filter" data-filter="pencil">Coloured Pencil</button>
+        <button class="filter" data-filter="ink">Ink</button>
+        <button class="filter" data-filter="pastel">Oil Pastel</button>
+        <button class="filter" data-filter="mixed">Mixed &amp; Digital</button>
+      </div>
+    </div>
+
+    <!-- tiles injected by main.js from window.ARTWORKS -->
+    <div class="masonry" id="masonry"></div>
+
+    <p class="note">A few early pieces are studies after artists I admire - Scott Sava's linework is what first pulled me into this style. Where a work started as someone else's, it's noted on the piece itself.</p>
+  </section>
+
+  <!-- ===== Writing / Publications ===== -->
+  <section class="section wrap" id="writing">
+    <p class="eyebrow reveal">Published Work</p>
+    <h2 class="section-title reveal">Words in print.</h2>
+    <div class="rows reveal d1">
+      <div class="row">
+        <span class="row-title">On Wings of Poems</span>
+        <span class="row-sub">A collection of original poetry, published under my own name.</span>
+        <span class="row-tag">Author · Poetry</span>
+      </div>
+      <div class="row">
+        <span class="row-title">Ink &amp; Stardust</span>
+        <span class="row-sub">Stories in verse, published with Scholastic Writers' Academy.</span>
+        <span class="row-tag">Scholastic</span>
+      </div>
+      <div class="row">
+        <span class="row-title">A Patchwork of Dreams</span>
+        <span class="row-sub">An illustrated anthology with Scholastic Writers' Academy.</span>
+        <span class="row-tag">Scholastic</span>
+      </div>
+      <div class="row">
+        <span class="row-title">VISION - School Magazine</span>
+        <span class="row-sub">Cover artwork: even in the darkest times, there is a light to move toward.</span>
+        <span class="row-tag">Cover Art</span>
+      </div>
+      <div class="row">
+        <span class="row-title">The Revolution</span>
+        <span class="row-sub">Contributor to the digital magazine.</span>
+        <span class="row-tag muted">Feature</span>
+      </div>
+      <div class="row">
+        <span class="row-title">Forthcoming - Scholastic</span>
+        <span class="row-sub">A new title with Scholastic, currently in the works.</span>
+        <span class="row-tag muted">In Progress</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Programs / Path ===== -->
+  <section class="section wrap" id="path">
+    <p class="eyebrow reveal">Programs &amp; Workshops</p>
+    <h2 class="section-title reveal">Where I've been learning.</h2>
+    <div class="rows reveal d1">
+      <div class="row">
+        <span class="row-title">Stanford AI4ALL</span>
+        <span class="row-sub">A Stanford program introducing AI through hands-on, project-based work.</span>
+        <span class="row-tag">Stanford</span>
+      </div>
+      <div class="row">
+        <span class="row-title">Stanford Product Design</span>
+        <span class="row-sub">Design-thinking and prototyping, the Stanford way.</span>
+        <span class="row-tag">Stanford</span>
+      </div>
+      <div class="row">
+        <span class="row-title">Robotics Workshop</span>
+        <span class="row-sub">Hands-on robotics, hosted at IIT Delhi.</span>
+        <span class="row-tag">IIT Delhi</span>
+      </div>
+      <div class="row">
+        <span class="row-title">U18 Launchpad</span>
+        <span class="row-sub">An entrepreneurship and innovation program for under-18s, at IIT Delhi.</span>
+        <span class="row-tag">IIT Delhi</span>
+      </div>
+      <div class="row">
+        <span class="row-title">miniMBA Program</span>
+        <span class="row-sub">A short, foundational course in business and strategy.</span>
+        <span class="row-tag muted">Workshop</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Recognition ===== -->
+  <section class="section wrap" id="recognition">
+    <p class="eyebrow reveal">Recognition</p>
+    <h2 class="section-title reveal">A few moments that stuck.</h2>
+    <div class="cards reveal d1">
+      <div class="card">
+        <span class="num">01</span>
+        <h4>India Book of Records</h4>
+        <p>Recognised as a record holder, and featured at the International Convocation for Record Holders.</p>
+      </div>
+      <div class="card">
+        <span class="num">02</span>
+        <h4>World Book Fair 2025</h4>
+        <p>Featured at the New Delhi World Book Fair, 2025.</p>
+      </div>
+      <div class="card">
+        <span class="num">03</span>
+        <h4>Scholastic Writers' Academy</h4>
+        <p>Selected for the Scholastic Writers' Academy, with work published in its collections.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer / Contact ===== -->
+  <footer class="footer wrap" id="contact">
+    <button class="to-top" data-totop>Top &uarr;</button>
+    <h2 class="footer-cta">Let's make something that doesn't look like <em>anything else.</em></h2>
+    <div class="footer-row">
+      <a class="footer-mail" href="mailto:hello@sonakshisanyal.com">hello@sonakshisanyal.com</a>
+      <div class="footer-meta">
+        <a href="#" target="_blank" rel="noopener">Instagram</a> &nbsp;·&nbsp;
+        <a href="#" target="_blank" rel="noopener">Behance</a><br>
+        © <span id="year">2026</span> Sonakshi Sanyal. All work and words her own.
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<!-- ===== Lightbox ===== -->
+<div id="lb" class="lb" role="dialog" aria-modal="true" aria-label="Artwork viewer">
+  <button id="lb-close" class="lb-close" aria-label="Close">&times;</button>
+  <button id="lb-prev" class="lb-nav lb-prev" aria-label="Previous">&lsaquo;</button>
+  <button id="lb-next" class="lb-nav lb-next" aria-label="Next">&rsaquo;</button>
+  <div class="lb-inner">
+    <div class="lb-figure"><img id="lb-img" src="" alt=""></div>
+    <div class="lb-info">
+      <span class="num" id="lb-num"></span>
+      <h3 id="lb-title"></h3>
+      <p class="med" id="lb-med"></p>
+      <p class="story" id="lb-story"></p>
+    </div>
+  </div>
+  <div class="lb-count">Work <b id="lb-cur"></b> / <span id="lb-tot"></span></div>
+</div>
+
+<script defer src="js/artworks.js"></script>
+<script defer src="js/main.js"></script>
+</body>
+</html>
